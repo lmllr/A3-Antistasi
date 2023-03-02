@@ -1,0 +1,35 @@
+name: Dev test build
+
+on: push
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+            python-version: '3.x'
+      - name: Lint
+        run: python Tools/sqf_validate.py
+      
+
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+    - name: Checkout the code
+      uses: actions/checkout@v2
+
+    - name: Increment version locally
+      run: chmod +x ./tools/incrementVersion.js &&
+        node ./tools/incrementVersion.js -b ${{github.sha}}
+
+    - name: Build addons
+      run: '.\tools\Builder\buildAddons.ps1 -metaFileName meta_dev.cpp'
+
+    - name: Upload build addon artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: A3A
+        path: build\A3A
