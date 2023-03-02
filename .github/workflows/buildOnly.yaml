@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+
+      - uses: arma-actions/sqflint@v1.0
+        name: Validate with SQFLint
         with:
-            python-version: '3.x'
-      - name: Lint
-        run: python Tools/sqf_validate.py
+          args: --exit w --directory A3A
       
 
   build:
