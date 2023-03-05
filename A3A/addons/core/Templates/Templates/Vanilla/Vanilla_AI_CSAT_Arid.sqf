@@ -27,7 +27,7 @@ private _cargoTrucks = ["O_Truck_02_transport_F", "O_Truck_02_covered_F", "O_Tru
 ["vehiclesFuelTrucks", ["O_Truck_03_fuel_F", "O_Truck_02_fuel_F"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["O_Truck_02_medical_F", "O_Truck_03_medical_F"]] call _fnc_saveToTemplate;
 private _vehiclesLightAPCs = [];
-private _vehicleAPCs = ["O_APC_Tracked_02_cannon_F", "O_APC_Wheeled_02_rcws_v2_F"];
+private _vehiclesAPCs = ["O_APC_Tracked_02_cannon_F", "O_APC_Wheeled_02_rcws_v2_F"];
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["O_MBT_02_cannon_F"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["O_APC_Tracked_02_AA_F"]] call _fnc_saveToTemplate;
@@ -76,13 +76,13 @@ if (allowDLCWS) then {
     _cargoTrucks append ["O_Truck_02_cargo_lxWS","O_Truck_02_flatbed_lxWS"];
     _vehiclesLightUnarmed append ["O_APC_Wheeled_02_unarmed_lxWS"];
     _vehiclesLightAPCs append ["O_APC_Wheeled_02_hmg_lxWS"];
-    _vehicleAPCs append ["O_APC_Tracked_02_30mm_lxWS"];
-    _vehiclesAmphibious append = ["O_APC_Wheeled_02_unarmed_lxWS", "O_APC_Wheeled_02_hmg_lxWS"];
+    _vehiclesAPCs append ["O_APC_Tracked_02_30mm_lxWS"];
+    _vehiclesAmphibious append ["O_APC_Wheeled_02_unarmed_lxWS", "O_APC_Wheeled_02_hmg_lxWS"];
 };
 ["vehiclesCargoTrucks", _cargoTrucks] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", _vehiclesLightUnarmed] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", _vehiclesLightAPCs] call _fnc_saveToTemplate;
-["vehiclesAPCs", _vehicleAPCs] call _fnc_saveToTemplate;
+["vehiclesAPCs", _vehiclesAPCs] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", _vehiclesAmphibious] call _fnc_saveToTemplate;
 
 #include "Vanilla_Vehicle_Attributes.sqf"
