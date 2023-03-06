@@ -301,7 +301,7 @@ private _militaryMachineGuns = [
 //If Western Sahara DLC
 if (allowDLCWS) then {
     _militaryGrenadeLaunchers append [
-        ["glaunch_GLX_camo_lxWS", "", "", "", [], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
+        ["glaunch_GLX_camo_lxWS", "", "", "", ["1Rnd_HE_Grenade_shell", "3Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "3Rnd_Smoke_Grenade_shell", "UGL_FlareWhite_f", "3Rnd_UGL_FlareWhite_f"], ["1Rnd_Pellet_Grenade_shell_lxWS"], ""]
     ];
     _militaryMachineGuns append [
         ["LMG_S77_AAF_lxWS", "", "acc_pointer_IR", "optic_MRCO", ["100Rnd_762x51_S77_Yellow_lxWS","100Rnd_762x51_S77_Yellow_Tracer_lxWS"], [], ""],
