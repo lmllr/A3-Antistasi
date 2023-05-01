@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project name="A3-Antistasi">
   <Package name="A3-Antistasi Mission GUI">
     <Container name="dialog_recruit_units">
@@ -597,8 +597,14 @@
       <Key ID="STR_antistasi_dialogs_buy_item_custom_hint_commander_only">
         <Original>Only the Commander may buy this item.</Original>
       </Key>
-      <Key ID="STR_antistasi_dialogs_vehicle_tab_vehicles">
-        <Original>Vehicles</Original>
+      <Key ID="STR_antistasi_dialogs_vehicle_tab_civ">
+        <Original>Civilian</Original>
+      </Key>
+      <Key ID="STR_antistasi_dialogs_vehicle_tab_reb">
+        <Original>Rebel</Original>
+      </Key>
+      <Key ID="STR_antistasi_dialogs_vehicle_tab_static">
+        <Original>Statics</Original>
       </Key>
       <Key ID="STR_antistasi_dialogs_vehicle_tab_other">
         <Original>Other</Original>
@@ -608,6 +614,15 @@
       </Key>
       <Key ID="STR_antistasi_dialogs_buy_vehicle_loot_tooltip">
         <Original>This item can collect loot\n%1 max load is %2</Original>
+      </Key>
+      <Key ID="STR_antistasi_dialogs_buy_vehicle_med_tooltip">
+        <Original>This item has medical capability</Original>
+      </Key>
+      <Key ID="STR_antistasi_dialogs_buy_vehicle_ammo_tooltip">
+        <Original>This item can rearm other vehicles</Original>
+      </Key>
+      <Key ID="STR_antistasi_dialogs_buy_vehicle_repair_tooltip">
+        <Original>This item can repair other vehicles</Original>
       </Key>
     </Container>
     <Container name="dialog_main_player">
